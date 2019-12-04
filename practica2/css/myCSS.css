@@ -1,0 +1,89 @@
+:root {
+  --back1: #151e44;
+  --back2: #2d4d7b;
+  --back3: #6598d8;
+  --resalt1: #ebac5d;
+  --resalt2: #00BFFF;
+  --resalt3: 	#00CED1;
+}
+
+body{
+  background-color: var(--back1);
+  font-family: sans-serif;
+}
+
+.comentarios{
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--back2);
+}
+
+.formComentarios textarea{
+  width: 100%;
+  height: 84px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 84px;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.formComentarios .btn{
+  border-color: var(--resalt2);
+  color: var(--resalt2);
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.formComentarios .btn:hover {
+  background: var(--resalt1);
+  border-color: var(--resalt1);
+  box-shadow: 0px 0px 25px  rgb(101, 152, 216);
+  color: black;
+}
+
+.media{
+  color: white;
+  border-top: 1px solid var(--resalt3);
+  padding-top: 20px;
+}
+
+.media img{
+  margin-right: 20px;
+}
+
+.media .nombre{
+  color: var(--resalt2);
+  margin-bottom: 0;
+}
+
+.media .nombre span{
+  font-size: 12px;
+  color: var(--resalt1);
+  margin-left: 10px;
+}
+
+.media .comentario{
+  margin-top: 10px;
+}
+
+.media .botones{
+  margin-bottom: 10px;
+}
+
+.media .botones a{
+  color: var(--resalt2);
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.media .botones a:hover{
+  color: var(--resalt1);
+}
+
+@media (max-width: 340px) {
+  .media{
+    margin-left: -15px;
+  }
+}

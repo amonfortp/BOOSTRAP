@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>In Line Forms</title>
+    <style>
+        :root {
+            --back1: #151e44;
+            --back2: #2d4d7b;
+            --back3: #6598d8;
+            --resalt1: #ebac5d;
+            --resalt2: #00BFFF;
+            --resalt3: #00CED1;
+        }
+
+        body {
+            background-color: var(--back1);
+            color: var(--resalt2);
+        }
+
+        .btn {
+            background-color: var(--resalt2);
+            color: var(--back1);
+        }
+
+        .btn:hover {
+            background-color: var(--resalt1);
+            color: var(--back1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <form action="" class="form-inline">
+                    <input type="text" class="form-control mr-3" name="nombre" id="nombre" placeholder="Nombre">
+                    <input type="password" class="form-control mr-3" name="password" id="password"
+                        placeholder="Contraseña">
+
+                    <label class="form-check-label mr-3">
+                        <input type="checkbox" name="recordar" id="recordar" class="form-check-input"> Recordar sesión
+                    </label>
+
+                    <input type="submit" class="btn" value="Iniciar sesión">
+                </form>
+            </div>
+        </div>
+    </div>

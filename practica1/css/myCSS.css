@@ -1,0 +1,139 @@
+:root {
+  --back1: #151e44;
+  --back2: #2d4d7b;
+  --back3: #6598d8;
+  --resalt1: #ebac5d;
+  --resalt2: #00BFFF;
+  --resalt3: 	#00CED1;
+}
+
+body {
+  background: var(--back1);
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.conP {
+  background: var(--back2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header > div.titulo {
+  font-size: 40px;
+  color: var(--resalt1);
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  text-align: center;
+}
+
+.conS {
+  text-align: justify;
+}
+
+.conS > .row > div {
+  background-color: var(--back3);
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.conS > .row > .sesion {
+  background-color: var(--back2);
+  color: var(--resalt1);
+  padding: 15px;
+  text-align: center;
+}
+
+.imagenP {
+  width: 60%;
+  height: 10%;
+  margin: auto;
+}
+
+.btn-outline-info {
+  border-color: var(--resalt2);
+  color: var(--resalt2);
+  margin-bottom: 10px;
+}
+
+.btn-outline-info:hover {
+  background: var(--resalt1);
+  border-color: var(--resalt1);
+  color: black;
+}
+
+.cajas {
+  width: 100px;
+}
+
+.icono {
+  display: block;
+  width: 55px;
+  height: 55px;
+  border: 3px solid var(--resalt2);
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.comentario > blockquote {
+  font-style: italic;
+  font-size: 14px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+
+.comentario > .blockquote-footer {
+  font-size: 10px;
+  color: black;
+  background-color: var(--back3);
+  text-align: right;
+}
+
+body > footer {
+  position: fixed;
+  color: var(--resalt1);
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+}
+
+footer > .container > .row > .col {
+  /*background-color: var(--back1);*/
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  height: 80%;
+}
+
+footer > .container > .row > .col > a > img {
+  width: 55px;
+  height: 55px;
+  margin: 5px 10%;
+}
+
+a {
+  color: var(--resalt1);
+}
+
+a:hover {
+  color: var(--resalt2);
+}
+
+@media (max-width: 995px) {
+  body > footer {
+    position: relative;
+  }
+
+  div.comentario {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1196px) {
+  div.comentario {
+    font-size: 14px;
+  }
+}

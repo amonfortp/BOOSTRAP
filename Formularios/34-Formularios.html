@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Formularios</title>
+    <style>
+        :root {
+            --back1: #151e44;
+            --back2: #2d4d7b;
+            --back3: #6598d8;
+            --resalt1: #ebac5d;
+            --resalt2: #00BFFF;
+            --resalt3: #00CED1;
+        }
+
+        body {
+            background-color: var(--back1);
+            color: var(--resalt2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Contraseña" name="contraseña"
+                            id="contraseña">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pais">País</label>
+                        <select name="pais" id="pais" class="form-control">
+                            <option value="mexico">México</option>
+                            <option value="españa">España</option>
+                            <option value="colombia">Colombia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" name="sexo" id="mujer" class="form-check-input mr-2">Mujer
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="terminos" id="terminos" class="form-check-input mr-2">Acepto
+                            terminos y condiciones
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
