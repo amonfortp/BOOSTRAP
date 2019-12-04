@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Variantes de Input</title>
+    <style>
+        :root {
+            --back1: #151e44;
+            --back2: #2d4d7b;
+            --back3: #6598d8;
+            --resalt1: #ebac5d;
+            --resalt2: #00BFFF;
+            --resalt3: #00CED1;
+        }
+
+        body {
+            background-color: var(--back1);
+            color: var(--resalt2);
+        }
+
+        hr {
+            background-color: var(--resalt2);
+        }
+
+        .btn {
+            background-color: var(--resalt2);
+            color: var(--back1);
+        }
+
+        .btn:hover {
+            background-color: var(--resalt1);
+            color: var(--back1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Tamaños input</h2>
+                <hr>
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input class="form-control form-control-lg" type="text" name="nombre" id="nombre"
+                            placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input class="form-control form-control-md" type="text" name="correo" id="correo"
+                            placeholder="Correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="pasaporte">Pasaporte</label>
+                        <input class="form-control form-control-sm" type="text" name="pasaporte" id="pasaporte"
+                            placeholder="Pasaporte">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12">
+                <h2>Estados de Readonly y disabled</h2>
+                <hr>
+                <form action="">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="" id=""
+                            placeholder="No puedes modificar este texto" readonly>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="" id="" placeholder="Deshabilitado" disabled>
+                    </div>
+                    <div class="form-group">
+                        <select name="" id="" class="form-control" disabled>
+                            <option value="1">Select Deshabilitado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre">
+                            <input type="radio" name="" id="" disabled> Radio button
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

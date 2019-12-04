@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Formularios Personalizados</title>
+    <style>
+        :root {
+            --back1: #151e44;
+            --back2: #2d4d7b;
+            --back3: #6598d8;
+            --resalt1: #ebac5d;
+            --resalt2: #00BFFF;
+            --resalt3: #00CED1;
+        }
+
+        body {
+            background-color: var(--back1);
+            color: var(--resalt2);
+        }
+
+        hr {
+            background-color: var(--resalt2);
+        }
+
+        .btn {
+            background-color: var(--resalt2);
+            color: var(--back1);
+        }
+
+        .btn:hover {
+            background-color: var(--resalt1);
+            color: var(--back1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="" class="mt-3">
+                    <h2>Checkbox Personalizado</h2>
+                    <hr>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3" disabled>
+                        <label class="custom-control-label" for="customCheck3">Check this custom checkbox</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col">
+                <form action="" class="mt-3">
+                    <h2>Radio buttons Personalizado</h2>
+                    <hr>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">1</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">2</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3">3</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" disabled>
+                        <label class="custom-control-label" for="customRadio4">4</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

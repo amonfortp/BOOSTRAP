@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Checkboxes y radio buttons</title>
+    <style>
+        :root {
+            --back1: #151e44;
+            --back2: #2d4d7b;
+            --back3: #6598d8;
+            --resalt1: #ebac5d;
+            --resalt2: #00BFFF;
+            --resalt3: #00CED1;
+        }
+
+        body {
+            background-color: var(--back1);
+            color: var(--resalt2);
+        }
+
+        hr {
+            background-color: var(--resalt2);
+        }
+
+        .btn {
+            background-color: var(--resalt2);
+            color: var(--back1);
+        }
+
+        .btn:hover {
+            background-color: var(--resalt1);
+            color: var(--back1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="">
+                    <h4>Checkbox</h4>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                            <input type="checkbox" name="" id="" value="opcion1"> Opcion 1
+                        </label>
+                    </div>
+
+                    <div class="form-check disabled">
+                        <label for="" class="form-check-label">
+                            <input type="checkbox" name="" id="" value="opcion2" disabled> Opcion 2
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <h4>Radio buttons</h4>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="sexo" id="hombre" value="hombre"> Hombre
+                        </label>
+                    </div>
+
+                    <div class="form-check disabled">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="sexo" id="mujer" value="mujer" disabled> Mujer
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12">
+                <form action="">
+                    <hr>
+                    <h4>Inline checkbox</h4>
+                    <div class="form-check form-check-inline">
+                        <label for="" class="form-check-label">
+                            <input type="checkbox" name="" id="" value="opcion1"> Opcion 1
+                        </label>
+                    </div>
+
+                    <div class="form-check form-check-inline disabled">
+                        <label for="" class="form-check-label">
+                            <input type="checkbox" name="" id="" value="opcion2" disabled> Opcion 2
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <h4>Radio buttons</h4>
+                    <div class="form-check form-check-inline">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="sexo" id="hombre" value="hombre"> Hombre
+                        </label>
+                    </div>
+
+                    <div class="form-check form-check-inline disabled">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="sexo" id="mujer" value="mujer" disabled> Mujer
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
