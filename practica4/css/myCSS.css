@@ -1,0 +1,53 @@
+:root {
+  --back1: #151e44;
+  --back2: #2d4d7b;
+  --back3: #6598d8;
+  --resalt1: #ebac5d;
+  --resalt2: #00bfff;
+  --resalt3: #00ced1;
+}
+
+body {
+  background-color: var(--back1);
+  font-family: sans-serif;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  border-radius: 10px;
+  width: 450px;
+}
+
+h1 {
+  color: var(--back1);
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.btn {
+  border-color: var(--resalt2);
+  color: var(--resalt2);
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background: var(--resalt1);
+  border-color: var(--resalt1);
+  color: black;
+}
+
+hr {
+  background-color: var(--resalt3);
+  height: 2px;
+  border-radius: 5px;
+}
+
+.vCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

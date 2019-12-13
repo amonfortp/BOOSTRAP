@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myCSS.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container vCenter">
+        <form class="needs-validation p-3 centrado" novalidate>
+            <h3>Registrate en MonfiShop</h3>
+            <div class="form-row">
+                <div class="col-12 mb-3">
+                    <input type="text" class="form-control" id="Nombre" value="" placeholder="Nombre de Usuario"
+                        required>
+                    <div class="valid-feedback">
+                        Bien introducido!
+                    </div>
+                    <div class="invalid-feedback">
+                        Mal introducido!
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <input type="email" class="form-control" id="Email" value="" placeholder="Cuenta de Email" required>
+                    <div class="valid-feedback">
+                        Bien introducido!
+                    </div>
+                    <div class="invalid-feedback">
+                        Mal introducido!
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <input type="password" class="form-control" id="contraseña" value="" placeholder="Contraseña"
+                        required>
+                    <div class="valid-feedback">
+                        Bien introducido!
+                    </div>
+                    <div class="invalid-feedback">
+                        Mal introducido!
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <input type="password" class="form-control" id="confContraseña" value=""
+                        placeholder="Confirmar Contraseña" required>
+                    <div class="valid-feedback">
+                        Bien introducido!
+                    </div>
+                    <div class="invalid-feedback">
+                        Mal introducido!
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn" type="submit">Crear cuenta</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+</html>
