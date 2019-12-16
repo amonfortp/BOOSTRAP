@@ -54,8 +54,30 @@
                         Mal introducido!
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-6">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="condiciones" required>
+                            <label class="form-check-label" for="condiciones">
+                                Aceptar condiciones de uso y privacidad
+                            </label>
+                            <div class="invalid-feedback">
+                                Debes aceptar las condiciones
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
                     <button class="btn" type="submit">Crear cuenta</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn" id="google" type="submit">Entrar con Google</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn" id="facebook" type="submit">Entrar Con Facebook</button>
                 </div>
             </div>
         </form>
@@ -81,6 +103,7 @@
                     }
                     form.classList.add('was-validated');
                 }, false);
+
             });
         }, false);
     })();
