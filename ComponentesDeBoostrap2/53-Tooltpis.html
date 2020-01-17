@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Tooltips</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <p>Lorem ipsum <a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip en enlace">dolor
+                        sit
+                        amet</a>, consectetur
+                    adipisicing elit. In
+                    soluta
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip en enlace">repellat unde
+                        esse</a>, vitae eaque tempore ea.</p>
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                    title="Tooltip en enlace">Boton</button>
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                    title="Tooltip en enlace">Boton</button>
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+                    title="Tooltip en enlace">Boton</button>
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right"
+                    title="Tooltip en enlace">Boton</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+</body>
+
+</html>
